@@ -176,8 +176,79 @@ img{
 .promocoes hr{
     width: 160px;
     height: 4px;
-    background-color: #191c03;
+    background-color: #272727;
     margin-bottom: 70px;
     border: none;
+}
+
+.item-container{
+    max-width: 960px;
+    margin: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.promocoes-item{
+    max-width: 260px;
+    flex: 1 1 260px;
+    margin: 0 10px 30px 10px;
+}
+
+@media (max-width: 859px){
+    .item-container{
+        align-items: center;
+        justify-content: center;
+    }
+    .promocoes-item{
+        margin-bottom: 50px;
+    }
+}
+
+.promocoes-item img{
+    border-radius: 4px;
+}
+
+.stars{
+    display: flex;
+    align-items: center;
     
 }
+
+.stars h2{
+    font-size: 1.25em;
+    color: #272727;
+    line-height: 2;
+}
+
+
+.stars i{
+   color: #E59B1E;
+   cursor: pointer;
+}
+
+.bacon{
+    margin: 10px 50px 10px 5px;
+}
+
+.burguer{
+    margin: 10px 32px 10px 5px;
+}
+
+.salada{
+    margin: 10px 43px 10px 5px;
+}
+
+.promocoes-item .valor-promo{
+    color: #7c7c7c;
+    font-size: 0.9em;
+    line-height: 1.4;
+    margin: 0 5px;
+}
+
+.promocoes-item p{
+    color: #7c7c7c;
+    font-size: 1.15em;
+    line-height: 1.4;
+    margin: 0 5px;
+}
+
